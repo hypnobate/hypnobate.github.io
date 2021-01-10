@@ -5,10 +5,16 @@ var hurl = "";
 var vidplaying = false;
 var vid = undefined;
 
-// SETUP
-fetch(serv)
-.then(x => x.text())
-.then(y => src = y);
+// USE SOCKET.IO TO HANDLE SERVER EVENTS
+var socket = io();
+
+// SETUP FUNCTIONS
+
+socket.on("video", function(msg){
+  alert(msg);
+});
+
+socket.emit("video","");
 
 // ==========================
 
