@@ -4,7 +4,7 @@ var htvid = "";
 var hurl = "";
 var vidplaying = false;
 var vid = undefined;
-
+ 
 // USE SOCKET.IO TO HANDLE SERVER EVENTS
 var socket = io();
 
