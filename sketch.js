@@ -19,7 +19,7 @@ socket.on("video", function(msg){ // this handles the incoming message from the 
   
 });
 
-socket.emit("video","");
+socket.emit("video",""); //this sends a request to the server which will send us the current video link (this responce will be processed by the handler above)
 
 // ==========================
 
