@@ -10,8 +10,13 @@ var socket = io("https://HypnobateStream.katiesarah1.repl.co");
 
 // SETUP FUNCTIONS
 
-socket.on("video", function(msg){
-  alert(msg);
+//VIDEO DATA WILL BE STORED AS FOLLOWS
+/*
+msg = ["https://hypnotube/video",[0,3,2]] //[video url, [hours,mins,secs]]
+*/
+
+socket.on("video", function(msg){ // this handles the incoming message from the server that tells us what video is on right now and what time its at!
+  
 });
 
 socket.emit("video","");
