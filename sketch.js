@@ -6,7 +6,7 @@ var vidplaying = false;
 var vid = undefined;
 
 // USE SOCKET.IO TO HANDLE SERVER EVENTS
-const socket = io('https://HypnobateStream.katiesarah1.repl.co');
+const socket = io('https://cors-anywhere.herokuapp.com/https://HypnobateStream.katiesarah1.repl.co');
 socket.on("update", function(data) {
   console.log("data");
 });
