@@ -32,7 +32,7 @@ if(src!=""&&htvid==""){
   .then(x => x.text())
   .then(y => htvid = y);
 }
-
+ 
 if(htvid!=""&&!vidplaying){
   try{hurl = htvid.split("<video id=\"thisPlayer")[1].split("src=\"")[1].split("\" type")[0]}
   catch(e){}
