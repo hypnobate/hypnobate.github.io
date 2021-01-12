@@ -6,8 +6,10 @@ var vidplaying = false;
 var vid = undefined;
  
 // USE SOCKET.IO TO HANDLE SERVER EVENTS
-var socket = io(serv);
-
+const socket = io('https://HypnobateStream.katiesarah1.repl.co');
+socket.on("update", function(data) {
+  console.log("data");
+});
 // SETUP FUNCTIONS
 
 //VIDEO DATA WILL BE STORED AS FOLLOWS
