@@ -4,7 +4,7 @@ var htvid = "";
 var hurl = "";
 var vidplaying = false;
 var vid = undefined;
- 
+
 // USE SOCKET.IO TO HANDLE SERVER EVENTS
 const socket = io('https://HypnobateStream.katiesarah1.repl.co');
 socket.on("update", function(data) {
